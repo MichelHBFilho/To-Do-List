@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To - Do List</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body onselectstart="return false">
+    <header>
+        <h1>To do List</h1>
+    </header>
+    <main>
+        <form id="formulario" autocomplete="off" data-form>
+            <input type="text" placeholder="Insira alguma tarefa" id="inputTarefa" data-form-input>
+            <button id="enviar" data-form-enviar>Enviar</button>
+        </form>
+        <div id="div-lista" data-div-lista>
+        </div>
+        <button id="deletar" data-deleta-todo>Deletar alguma tarefa</button>
+    </main>
+    <script src="../js/deletarTarefa.js"></script>
+    <script src="../js/adicionarTarefa.js"></script>
+</body>
+</html>
